@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <%- include('logo2'); %>
+            
+            <li class="nav-item">
+                <a class="nav-link active" href="/profile">Profile</a>
+            </li> 
+
+            <% if (user) { %>
+            <li class="nav-item">
+                <a class="nav-link active" href="/auth/logout">Logout</a>
+            </li> 
+            <% } else { %>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/auth/login">Login</a>
+                </li>                                  
+            <% } %>
+
+        </ul>             
+    </div>
+</nav>

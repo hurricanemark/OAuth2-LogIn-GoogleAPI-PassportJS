@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('./partials/head'); %>
+    <title>OAuth Welcome</title>
+</head>
+<body>
+    <%- include('partials/navigation2'); %>
+    <header>
+        <h3>Welcome <strong style="color:goldenrod"><%= user.username %></strong></h3>
+    </header>
+    <main>
+        <img src="<%= user.thumbnail %>" />
+        <p>What do you want to do today?</p>
+        <ul>
+            <li>Raise an ant farm and sneak it in captain Underpant.</li>
+            <li>Pondering where the darkness come from.  (We know the physical source of light, but we donot know the source of darkness).</li>
+            <li>Write a mobile app to detect liyng politicians and enrourage everyone to point the app at political rallies.</li>
+            <li>Discover why Mars cannot have water in liquid form.</li>
+            <li>Invent ways to collect all plastic wastes and use it to pave roads.</li>
+            <li>Send a message to the aliens on the Betelgeuse star system.  We can supply them with earth's oligarchs as food source.</li>
+        </ul>
+    </main>
+</body>
+</html>
